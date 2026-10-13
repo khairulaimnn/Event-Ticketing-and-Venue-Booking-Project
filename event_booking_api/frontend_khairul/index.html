@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>EventSpace | Khairul</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="index.html">EventSpace<span>.</span></a>
+    <a class="button" href="login.html">Sign in</a>
+  </header>
+
+  <main>
+    <section class="hero">
+      <p class="eyebrow">DISCOVER YOUR NEXT EXPERIENCE</p>
+      <h1>Great events.<br>Lasting memories.</h1>
+      <p>Explore upcoming events, venues and ticket availability.</p>
+      <a class="button" href="#events">Explore events</a>
+    </section>
+
+    <section id="events" class="events-section">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">WHAT'S ON</p>
+          <h2>Explore events</h2>
+        </div>
+        <button id="refreshBtn" type="button">Refresh events</button>
+      </div>
+
+      <label for="searchInput">Search events</label>
+      <input
+        id="searchInput"
+        type="search"
+        placeholder="Search by event name or venue..."
+      >
+
+      <p id="message" role="status" aria-live="polite"></p>
+      <div id="eventList" class="event-grid" aria-busy="false"></div>
+    </section>
+  </main>
+
+  <footer>EventSpace · Frontend developed by Khairul</footer>
+</body>
+</html>

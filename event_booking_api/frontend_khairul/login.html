@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Login | EventSpace</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="login.js" defer></script>
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="index.html">EventSpace<span>.</span></a>
+    <a href="index.html">Browse events</a>
+  </header>
+
+  <main class="login-container">
+    <section class="login-card">
+      <p class="eyebrow">WELCOME TO EVENTSPACE</p>
+      <h1>Welcome back.</h1>
+      <p>Sign in to access your event dashboard.</p>
+
+      <form id="loginForm">
+        <label for="email">Email address</label>
+        <input
+          id="email"
+          name="email"
+          type="email"
+          autocomplete="username"
+          maxlength="150"
+          placeholder="Enter your email"
+          required
+        >
+
+        <label for="password">Password</label>
+        <input
+          id="password"
+          name="password"
+          type="password"
+          autocomplete="current-password"
+          maxlength="1024"
+          placeholder="Enter your password"
+          required
+        >
+
+        <label class="show-password">
+          <input id="showPassword" type="checkbox">
+          Show password
+        </label>
+
+        <button id="loginBtn" type="submit">Sign in</button>
+        <p id="loginMessage" role="status" aria-live="polite"></p>
+      </form>
+    </section>
+  </main>
+
+  <footer>EventSpace · Frontend developed by Khairul</footer>
+</body>
+</html>
